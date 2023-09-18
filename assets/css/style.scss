@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "AlfaSlabOne";
+    src:
+    
+      url("../font/AlfaSlabOne-Regular.ttf") 
+  }
+
+  %police{
+    font-family:Arial, Helvetica, sans-serif;
+      }
+
+%colorGrey{
+    color:grey;
+}
+
+
+
+
+
+
+body{
+    body > span:nth-child(1){
+        text-align: center;
+        float: right;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        width: 2rem;
+    }
+
+
+
+    font-family: "AlfaSlabOne";
+    color:black;
+    background-image: url(/img/fond.webp);
+    background-image: cover;
+    margin: 0 auto;
+    .clear{
+        clear: both;
+        }
+        img[alt="logo_les_news"]{
+            width: 10rem;
+            float: left;
+            filter: saturate(50%);
+            }
+      
+            #title-flex{
+                display: flex;
+                flex-direction: column;
+                @extend %police;
+                #web{
+                    @extend %colorGrey;
+                    
+                }
+                h1{
+                
+                    font-family: "AlfaSlabOne";
+                    margin: 1rem 0;
+                }
+                h2{
+                    clear:both;
+                    @extend %cadre;
+                    margin: 1rem 0;
+                }h4{
+                    @extend %colorGrey;
+                    margin: 0px;
+                }
+                
+                
+            }
+
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                
+               
+               
+            .card {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 27%;
+                background-color: #F0EAE8;
+                box-shadow: 10px 5px 5px gray;
+                padding: 1rem;
+                p{
+                    text-align: justify;
+                    @extend %police;
+                    @extend %colorGrey;
+                    
+                }
+                h3{
+                   text-align: center;
+                   font-family: Arial, Helvetica, sans-serif;
+                   background-color: black;
+                   border: 1px solid black;
+                   border-radius: 30px;
+                   color:white;
+                   padding: 0.8rem;
+                   margin: 0;
+                }
+            
+                .box{
+                    display:flex;
+                   
+                    flex-wrap: wrap;
+                    float: left;
+                    .photo-card{
+                        width: 10rem;
+                        height: 20rem;
+                        
+                    }
+                    .text-box{
+                        background-color: red;
+                        color: white;
+                        text-align: center;
+                        width: 10rem;
+                    }
+                  
+                }
+            
+              
+            }
+               
+
+        }
+
+}
+
+div > button {
+  
+   }
+
+
+
+button{
+    background-color: black;
+    color:white;
+    float : right;
+}
+
+
+
+
